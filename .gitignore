@@ -1,0 +1,14 @@
+# Generated deployment output
+dist/
+
+# Local screenshots may contain personal browser data
+preview-*.png
+
+# Local data exports
+opora-export-*.json
+opora-dashboard*.json
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
