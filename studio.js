@@ -1,6 +1,6 @@
 /* Studio: positioned 24-column dashboards, history and panel editor. */
 spaceKinds.text='Текст / разделитель';
-const studioColors=['#b5a1e8','#afc69d','#d9c58d','#91bdca','#ce9eb6','#c99f80'];
+const studioColors=['#c5afff','#b7dda4','#f0d591','#94d7eb','#edaac7','#f1b58c'];
 let studioInspector=false,studioInspectorTab='settings',studioUndo=[],studioRedo=[],studioGesture=null,studioFullscreen=null;
 function studioBounds(p){p.w=Math.max(2,Math.min(24,Math.round(p.w||(+p.width||6)*2)));p.h=Math.max(10,Math.min(100,Math.round(p.h||(+p.height||300)/10)));p.x=Math.max(0,Math.min(24-p.w,Math.round(p.x||0)));p.y=Math.max(0,Math.min(5000,Math.round(p.y||0)));p.width=p.w/2;p.height=p.h*10;return p}
 function overlaps(a,b){return a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y}
